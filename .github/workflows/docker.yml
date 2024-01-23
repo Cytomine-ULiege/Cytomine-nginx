@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: cytomineuliege/core
+          images: cytomineuliege/nginx
           tags: |
             type=raw,value=latest,enable=${{ steps.release.outputs.release }}
             type=semver,pattern={{raw}}
